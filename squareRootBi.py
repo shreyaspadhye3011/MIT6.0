@@ -15,10 +15,11 @@ def squareRootBi(x, epsilon):
 			high = guess;
 		else:
 			low = guess;
-		print 'Current counter: ' + str(ctr);
+		print 'Current counter: ' + str(ctr) + ' | Guess: ', guess;
+		guess = (low + high) / 2.0;
 		ctr += 1;
 	assert ctr < 100, 'Max counter reached';
 	print 'Square root: ' + str(guess) + '. Reached in ' + str(ctr) + ' iterations';
 	return guess;
 
-squareRootBi(4, 0.001);
+squareRootBi(9, 0.001);
