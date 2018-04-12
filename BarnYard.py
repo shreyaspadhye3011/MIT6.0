@@ -14,6 +14,6 @@ def farmYard1():
 	headsInput = raw_input("Enter number of heads: ");
 	legsInput = raw_input("Enter number of legs: ");
 	numPigs, numChickens, numSpiders = barnYard1(int(headsInput), int(legsInput));
-	print numPigs, ' pigs, ', numChickens, ' chickens & ', numSpiders, ' spiders.';
+	print (numPigs, ' pigs, ', numChickens, ' chickens & ', numSpiders, ' spiders.');
 
 farmYard1();
